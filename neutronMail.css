@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fresca');
+.mailFont {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 0;
+    vertical-align: middle;
+    line-height: 1.5em;
+}
+body {
+    margin: 0 0 0 0;
+}
+a {
+    text-decoration: none;
+    color: #6f6f6f;
+}
+header {
+    width: 100%;
+    background-color: white;
+}
+.navMenu {
+    font-family: "Titillium Web";
+    color: #5e5e5e;
+}
+.navMenu > span {
+    margin-right: 1em;
+}
+.navMenu > span:hover, .rightNav:hover, .purpleLoginButton > div:hover, .buttonText:hover, .socialList > li:hover {
+   color: #ceb994;
+}
+.rightNav {
+    color: #454545;
+}
+.langNav {
+    padding-top: 1.5em;
+    grid-area: lang;
+    font-family: "Titillium Web";
+}
+.langNav > span {
+    margin-right: 1em;
+}
+.langNav > span::after {
+    content: "/";
+    padding-left: 10px;
+}
+.langNav :last-child::after {
+    content: none;
+  }
+.mainTitle {
+    font-family: "Titillium Web", sans-serif;
+    padding-top: 2em;
+    color: #7a7a79;
+    font-weight: 600;
+    font-size: 3.5em; 
+}
+.underTitle {
+    font-family: "Titillium Web", sans-serif;
+    color: #7a7a79;
+    font-size: 2.12em; 
+}
+.pinky {
+    color: #fc6c6e;
+}
+.headerGridUp {
+    padding-top: 5em;
+    display: grid;
+    grid-template: 25px 25px / 4fr 3fr 10fr 14fr 4fr;
+    grid-template-areas: "0 0 0 0 0" "1 lang lang 2 2"
+}
+.learnMoreButton > div {
+    font-size: 1.06em;
+    font-family: "Titillium Web", sans-serif;
+    color: #676767;
+}
+.bgImgDiv {
+    height: 654px;
+    background-image: url(assets/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.purpleLoginButton {
+    background: linear-gradient(to right, #582c7e, #6276cc);
+    display: inline-block;
+    width: 97px;
+    height: 43px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px #6069be;
+}
+.purpleCreateButton {
+    background: linear-gradient(to right, #646c92 3em, #5f2e69);
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 15px 0px 20px #6069be, -15px 0px 20px #6069be;
+}
+.purpleRadiantButton {
+    background: linear-gradient(to right, #7e5382, #7b5180);
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius:100%;
+    margin-left: 1em;
+}
+.burizeButton {
+    background-color: #45a2e4;
+    display: inline-block;
+    width: 170px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px #91dad4;
+}
+.buttonText {
+    font-family: "Titillium Web", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    height: 100%;
+    color: white;
+    font-size:1.12em;
+}
+.socialList {
+    list-style: none;
+}
+.icon {
+    font-size: 1.37em;
+}
+.underMainName {
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+    text-align: center;
+}
+.rightIcons {
+    position: absolute;
+    right: 2em;
+    top: 295px;
+    color: #676766;
+    font-size: 1.37em;
+}
+.alignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3em;
+}
+
+.thinLine {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+}
+.underMountain {
+    display: grid;
+    /*grid-template-columns: 9% 22% 22% 22% 1fr;
+    grid-gap: 5%;*/
+    grid-template-columns: 9% 22% 22% 22% 9%;
+    grid-gap: 4%;
+}
+.picAndText {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 4fr;
+    grid-template-areas: "qa qb" "qc qc";
+    font-family: "Titillium Web", sans-serif;
+}
+.picSpase {
+    grid-area: qa;
+}
+.textSpace {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-area:qb; 
+}
+.underText {
+    color: #959393;
+    font-size: 0.87em;
+    grid-area: qc
+}
+div.textSpace :first-child {
+    color: #555555;
+    font-size: 1.63em;
+}
+div.textSpace >div +div {
+    color: #959393;
+}
+.notebookPic > img {
+    margin-top: -1em;
+}
+.noteLine::before {
+    content: "";
+    display:inline-block;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    background: #b9b9b9;
+    height: 1px;
+    width: 78%;
+}
+.noteLine {
+    margin-top: 160px;
+    text-align: center;
+}
+.noteLine > span:nth-of-type(1) {
+    display: inline-block;
+    font-size: 2em;
+    color: #535353;
+    margin-top: 80px;
+}
+.noteLine > span:nth-of-type(2) {
+    font-size: 1.63em;
+    color: #7c7c7c;
+}
+.middleText { /* работает только при разрешении больше 550px*/
+    margin-top: 100px;
+    display: grid;
+    grid-template: 1fr 1fr/ 11fr 550px 20fr;
+    text-align: right;
+    font-family: "Titillium Web", sans-serif;
+}
+.middleHeader {
+    color: #535353;
+    font-size: 3em;
+}
+.middleUnderHeader {
+    color: #959393;
+    font-size:1.25em;
+}
+.learnMore {
+    display: grid;
+    grid-template: 1fr 1fr / 5fr 2fr 2fr;
+    grid-template-areas: "a b c" "d b c"; 
+}
+div.learnMore :nth-child(1) {
+    grid-area: a;
+}
+div.learnMore :nth-child(2) {
+    border-top: 1px solid #bfbfbf;
+    grid-area: d;
+}
+div.learnMore:nth-child(4) {
+    grid-area: c;
+}
+.learnMoreButton {
+    grid-area: b;
+    border: 1px solid #bfbfbf;
+    display: inline-block;
+    width: 334px;
+    height: 60px;
+    border-radius: 30px; 
+}
+
+div.learnMoreButton >div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.middleInfo {
+    font-family: "Titillium Web", sans-serif;
+}
+.deviceTitle {
+    text-align: right;
+    font-size: 2em;
+    color: #535353;
+    margin-top: -1em;
+    position: relative;
+    right: 0;
+    z-index: 5;
+}
+.deviceInfo {
+    text-align: right;
+    color:#959393;
+    font-size: 1.06em;
+}
+.linearSpace {
+    clip-path: polygon(0 0, 100% 0, 100% 0px, 0 100%);
+    transform: rotate(180deg);
+    background: linear-gradient(to top right, #eeeeee, #f1f1f1);
+    height: 250px; 
+}
+
+.bostonHeraldStyle {
+    display: grid;
+    grid-template-columns: 47fr 433px 65fr;
+}
+.notebookPic {
+    position: absolute;
+    right: 10px;
+    height: 700px;
+    width: 700px;
+    z-index: 5;
+}
+.middleColor {
+    background: linear-gradient(to bottom, #f1f1f1, white);
+    margin-top:-1px;
+}
+.notebookBody {
+    display:grid;
+    grid-template-columns: 50fr 450px 59fr;
+}
+.bottomInfo {
+    margin-top: 80px;
+    display: grid;
+    font-family: "Titillium Web", sans-serif;
+    grid-template: 2fr 2fr 1fr / 1fr 3fr 3fr 1fr 1fr 2fr 2fr 3fr;
+    grid-template-areas: "a a a a a a a z" "x b c d k e f z" "x q q q y y y y";
+    color: #6f6f6f;
+}
+.borderPart1 {
+    grid-area:z;
+    border-left: 1px solid #b9b9b9;
+}
+.borderPart1 + div {
+    grid-area:x;
+}
+.generalStyle + div {
+    grid-area:c
+}
+.companyStyle + div {
+    grid-area:k;
+}
+.bottomSocialList + div {
+    grid-area: y;
+}
+/**/
+.brandImages {
+    grid-area:a;
+    border-top: 1px solid #b9b9b9;
+    text-align: right;
+}
+.sl {
+    padding-left: 0;
+
+}
+ul.sl > li {
+    display: inline;
+    margin-left: 0.63em;
+    
+}
+ul.sl > li::after {
+    content: "/";
+    margin-left: 0.5em;
+}
+ul.sl :first-child {
+    margin-left: 0;  
+}
+ul.sl :last-child::after {
+    content: " ";  
+}
+.generalStyle {
+    padding-left: 10px;
+    grid-area:b;
+}
+.legalStyle {
+    grid-area:e;
+    text-align: right;
+}
+.neutronMailStyle {
+    grid-area:f;
+}
+.preList {
+text-align: right;
+padding-right: 1em;
+font-weight: bold;
+}
+.companyStyle {
+    grid-area:d;
+    border-right: 1px solid #b9b9b9;
+}
+.bottomSocialList {
+    margin-left: -1em;
+    grid-area: q;
+    border-right: 1px solid #b9b9b9;
+    font-family: "Titillium Web", sans-serif;
+    color: #5c5c5c;
+    font-size: 0.93em;
+}
+div.neutronMailStyle > div+div, div.legalStyle >div+div, div.companyStyle >div+div {
+    direction: rtl;
+}
+@media (min-width: 1485px) {
+    .rightNav {
+        margin-left: 1.5em;
+        margin-right: 0.5em;
+    }  
+}
+@media (min-width: 1400px) {
+    .pseudo::after {
+        content: "";
+        display: inline-block;
+        margin-top: 206px;
+        margin-left: 3.5em;
+        background: #b9b9b9;
+        height: 180px;
+        width: 1px;
+    }
+    .rightNav {
+        margin-right: 20px;
+    }
+    .learnMoreButton ::before {
+        content: "";
+        display: inline-block;
+        background: #b9b9b9;
+        height: 410px;
+        width: 1px;
+        bottom: 40px;
+        position: relative;
+        left: 68px;
+        bottom: 236px;
+    }
+    .pseudoLine::before {
+        position: absolute;
+        left: 80px;
+        content: "";
+        display: inline-block;
+        background: #b9b9b9;
+        height: 160px;
+        width: 1px;
+    }
+}
+@media (max-width: 1255px) {
+    .notebookPic > img {
+        display: none;
+    }
+    .rightIcons {
+        top: 225px;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1418px) {
+    .notebookPic > img {
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (max-width: 1121px) {
+    .brandImages {
+        text-align: center;
+    }
+}
+@media (max-width: 712px) {
+    .underMainName {
+        display: block;
+        text-align: left;
+        padding-left: 8em;
+    }
+    .mainTitle {
+        padding-left: 2em; 
+    }
+}
+@media (max-width: 700px) {
+    .picSpase {
+        display: none;
+    }
+    .noteLine {
+        margin-top: 60px;
+    }
+    .bottomSocialList {
+        margin-left: 0.5em;
+    }
+}
+@media (max-width: 600px) {
+    .brandImages > img {
+        display: none;
+    }
+    .bottomInfo {
+        grid-template: 0fr 2fr 1fr / 1fr 3fr 3fr 1fr 1fr 2fr 2fr 3fr;
+    }
+    .borderPart1 {
+        border-top: 1px solid #b9b9b9;
+        border-left: none;
+    }
+} 
+@media (max-width: 550px) {
+.middleText {
+    margin-top: -5em;
+    grid-template: 1fr 1fr/ 1fr 10fr 2fr;
+}
+.bostonHeraldStyle {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+.middleColor {
+    background: linear-gradient(to right, white, white);
+}
+.linearSpace {
+    display: none;
+}
+.bostonHeraldStyle {
+    display: none;
+}
+.underText {
+    display: none;
+}
+}
+
+
